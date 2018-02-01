@@ -1,0 +1,172 @@
+body {
+	 background-color: $body-bg;
+	 margin: $body-margin;
+		div#content {
+			background-color: $div-content-bg;
+			padding: $div-content-padding;
+			img {
+				padding: $img-padding;
+				border: $img-border;
+			}
+		}
+	}
+
+h1, h2 {
+	color: $h1-h2-color;
+}
+
+h1 {
+	text-align: $h1-text-centr;
+}
+
+p, td {
+	color: $p-text-color;
+}
+
+p img {
+	margin: $first-img-left-margin;
+	float: $img-float-left;
+}
+
+.brief {
+	background-color: $brief-bg;
+	max-width: $brief-max-width;
+	padding: $brief-padding;
+	float: $brief-float-left;
+	margin-right: $brief-margin-rigth;
+}
+
+.img-right {
+	float: $img-right-float;
+	margin-left: $img-right-margin;
+	margin-top: $img-right-top-margin;
+}
+
+a {
+	color:$a-color;
+}
+
+.img-left {
+	float: $img-left-float-left;
+	margin-right: $img-left-margin-right;
+}
+
+caption {
+	text-align: $capption-text-align;
+}
+
+tr th {
+	background-color: $table-header;
+	text-transform: $table-header-text-transform;
+	font-weight: $table-header-font-weight;
+	text-align: $table-header-text-align;
+	border-bottom-style: $table-border-left-style;
+}
+
+tr th, tr td {
+	padding: $table-padding;
+}
+
+table {
+	border-collapse: $table-border-collapse;
+	margin-bottom: $table-margin;
+}
+
+td {
+	border: $table-border-bottom;
+	border-left-style: $table-border-left-style;
+	border-right-style: $table-border-right--style;
+	background-color: $td-bacgroung;
+}
+
+th {
+    border-right-style: $table-border-right-style;
+    border-color: $table-border-color;
+    border-width: $table-border-width;
+}
+
+tr th:last-child {
+	border-right-style: $table-border-right--style;
+}
+
+.form-style-1 {
+    margin: $form-margin;
+    padding: $form-padding;
+    font: $form-font;
+    color: $form-color;
+}
+
+.form-style-1 li {
+    padding: $zero;
+    list-style: $none;
+    margin: $li-margin;
+}
+
+.field-divided {
+	width: $li-width;
+}
+
+.one label, .two label {
+	position: $absolute-pozition;
+	top: $lable-top;
+}
+
+ li {
+	position: $relative-pozition;
+}
+
+.two  {
+	position: $absolute-pozition;
+	right: $zero;
+    top: $zero;
+    left: $fifty-proc;
+}
+
+.two .field-divided {
+	width: $hundred-proc;
+}
+
+.form-style-1 .field-long{
+    width: $hundred-proc;
+}
+
+.form-style-1 .field-select{
+    width: $hundred-proc;
+}
+
+.form-style-1 .field-textarea{
+    height: $hundred-proc;
+}
+
+.form-style-1 input[type=text], 
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: $border-box;
+    @include border-box($border-box);
+    border: $select-border;
+    padding: $select-padding;
+    margin: $zero-px;
+    @include transition($transition);
+    outline: $none;  
+}
+
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	@include box-shadow($box-shadow);
+    border: $border-box-shadow;
+}
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: $div-content-bg;
+    padding: $input-padding;
+    border: $input-border;
+    color: $btn-color;
+}
+
+.form-style-1 option[type=submit]:first-child {
+ 	display: $none;
+ }
+
