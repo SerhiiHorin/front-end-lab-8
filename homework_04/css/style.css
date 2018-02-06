@@ -44,6 +44,49 @@ header, footer {
    min-height: 200px;
    }
 
+header h3  {
+ color:#FFF;
+ padding-left: 170px;
+}
+
+header {
+	background-image: url("../img/apples.jpg");
+	background-repeat: no-repeat;
+	background-color: #cccccc;
+}
+img {
+	width:100%; 
+	height: 100%;
+}
+/*.topnavigation {
+ padding-right: 170px;
+}
+
+
+.topnavigation {
+  list-style: none;
+  margin: 0; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.topnavigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color:#FFF;
+}
+  .topnavigation a { 
+    text-align: center; 
+    padding: 20px;
+  }
+}*/
+
 .flex-container {
   display: flex;
   align-items: stretch;
@@ -75,7 +118,7 @@ header, footer {
 	 display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  /*height: 200px;*/
 }
 
 .row {
@@ -201,6 +244,7 @@ footer > .footer-left {
 	color: #F3F3F3;
 }
 
+
 .foottt {
   display: flex;
   align-items: stretch;
@@ -210,10 +254,9 @@ footer > .footer-left {
   width: 50%;
   text-align: justify;
 }
-.footone ,.foottwo {
+.footone, .foottwo {
 	flex-grow: 1;
 }
-
 
 .footone p, .foot p {
 	color:#9E9E9E;
@@ -227,7 +270,6 @@ footer > .footer-left {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
 }
@@ -243,3 +285,4 @@ footer > .footer-left {
     padding: 10px;
   }
 }
+

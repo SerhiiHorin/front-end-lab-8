@@ -1,0 +1,85 @@
+@media only screen and (max-width : 320px) {
+
+.sidenav li {
+	padding: 10px 0 10px 10px;
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.sidenav li:first-child {
+	border-top: 1px solid #CCCCCC;
+}
+
+div.logo {
+   height: 74px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+div.logo img {
+  margin: 0;
+  padding: 10px 0;
+  width: 100px;
+   height: 34px;
+}
+
+.banner {
+   background-image: url("../img/xs-banner.jpg");
+   height: 190px; 
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.banner p {
+	color: #fff;
+	background-color: #39c2d7;
+	margin: 0 20px 0 0;
+	position: absolute;
+	padding: 7px;
+	bottom: 20px;
+	left: 20px;
+}
+
+.content div {
+	margin: 20px;
+	background-color: #CCCCCC;
+}
+
+.content div img {
+	width: 220px;
+	height: auto;
+	padding: 10px 30px 10px 30px;
+}
+
+.content div h3 {
+	padding: 0 10px;
+	margin: 3px 0;
+}
+
+.content div p {
+	padding: 0 10px 10px 10px;
+    margin-top: 10px;
+}
+
+.footnav li {
+	text-align: center;
+	font-size: 12px;
+	padding: 2px 0;
+	color: #fff;
+}
+
+.footnav a {
+	color: #fff;
+}
+
+.footnav {
+	padding: 12px 0 0 0;
+	background-color: #39c2d7;
+	margin-bottom: 0;
+}
+}
+

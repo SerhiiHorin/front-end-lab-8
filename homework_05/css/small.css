@@ -1,0 +1,111 @@
+
+@media screen and (min-width: 321px) and (max-width: 575px) { 
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+   
+}
+	.col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+div.logo {
+   height: 74px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+div.logo img {
+  margin: 20px 0 10px 0;
+}
+
+li {
+	display: inline;
+	padding: 5px;
+}
+nav {
+	margin-left: 130px;
+}
+
+.banner {
+   background-image: url("../img/s-banner.jpg");
+   height: 326px; 
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 25px 0;
+    position: relative;
+}
+
+.banner p {
+	color: #fff;
+	text-align: center;
+	margin: 0 20px 0 0;
+	position: absolute;
+	padding: 7px;
+	top: 20px;
+	left: 150px;
+	right: 130px;
+}
+
+.content div {
+	margin-left: 30px;
+	margin-bottom: 30px;
+	background-color: #CCCCCC;
+	
+}
+
+.content div img {
+	width: 220px;
+	height: 145px;
+	padding: 10px 10px 10px 25px;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 240px;
+    height: 280px;
+    border: 1px solid #CCCCCC;
+    outline: 3px solid #CCCCCC;
+}
+
+.content div h3 {
+	padding: 0 10px;
+}
+.footnav li {
+	text-align: center;
+	padding: 2px 0;
+	color: #fff;
+}
+
+.footnav a {
+	color: #fff;
+}
+
+.footnav {
+	padding: 12px 0 0 0;
+	background-color: #39c2d7;
+	margin-bottom: 0;
+}
+
+}
