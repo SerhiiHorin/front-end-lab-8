@@ -1,9 +1,9 @@
 /*global console, prompt*/
 var number = Number(prompt("Please enter natural number from 1 to 20", "1"));
 
-var emp = "   ";
-var kub = "[~]";
-var pyramid = "";
+var emp = "   ",
+kub = "[~]",
+pyramid = "";
 
 if (!Number.isInteger(number) || number <= 0 || number > 20) {
     console.error("‘Incorrect!’");
