@@ -1,0 +1,363 @@
+* {
+     box-sizing: border-box;
+}
+ body {
+     margin: 0;
+     font-family: 'Open Sans', 'sans-serif';
+     background-color: #F3F3F3;
+}
+img {
+     width:100%;
+     height: 100%;
+}
+ .topnavigation {
+     padding-left: 85px;
+}
+ .topnavigation a:link {
+     border-bottom: none;
+}
+ .topnavigation a:visited {
+     text-decoration: none;
+}
+ .topnavigation a:hover {
+     border-bottom: 1px solid #FFF;
+}
+ .topnavigation a:active {
+     border-bottom: 1px solid #FFF;
+}
+ .topnavigation {
+     list-style: none;
+     margin: 0;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-flow: row wrap;
+     justify-content: flex-start;
+}
+ .topnavigation a {
+     text-decoration: none;
+     display: block;
+     padding: 1em;
+     color:#FFF;
+}
+ header {
+     min-height: 740px;
+     width: 100%;
+}
+ header h3 {
+     color:#FFF;
+     padding-left: 150px;
+}
+ header {
+     background-image: url("../img/apples.jpg");
+     background-repeat: no-repeat;
+     background-color: #cccccc;
+     background-size: 100% 100%;
+}
+ .navone, .navtwo {
+     padding-top: 50px;
+}
+ .nav-centre {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color:#FFF;
+     text-align: center;
+}
+ span {
+     font-family:initial;
+}
+ .nav-centre div:nth-child(1) {
+     font-size: 40px;
+     letter-spacing: 3px;
+}
+ .nav-centre span {
+     font-size: 90px;
+}
+ .nav-centre sup {
+     font-size: 20px;
+}
+ .button {
+     background-color: #000;
+     border: none;
+     color: #FFF;
+     padding: 15px 52px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     opacity: 0.5;
+}
+ .button-border {
+     position: absolute;
+     outline: 2px solid #FFF;
+     top: 95%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+ main {
+     min-height: 800px;
+     margin: 0px;
+     padding: 0px;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-flow: row;
+     flex-flow: row;
+}
+ main > .centr {
+     -webkit-flex: 3 1 80%;
+     flex: 3 1 80%;
+     -webkit-order: 2;
+     order: 2;
+}
+ main > .sidebar-left {
+     -webkit-flex: 1 6 10%;
+     flex: 1 6 10%;
+     -webkit-order: 1;
+     order: 1;
+}
+ main > .sidebar-right {
+     -webkit-flex: 1 6 10%;
+     flex: 1 6 10%;
+     -webkit-order: 3;
+     order: 3;
+}
+ footer {
+     display: block;
+     min-height: 200px;
+}
+
+ .heart {
+     position: absolute;
+     background-color: #5A5A5A;
+     border: 2px solid #FFF;
+     color: #FFF;
+     padding: 5px 12px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     position: absolute;
+     top: 12px;
+     right: 12px;
+}
+ .firstimg p, .twoimg p, .thirdimg p, .fourimg p {
+     position: absolute;
+     bottom: 10px;
+     left: 35px;
+     color: #FFF;
+}
+ 
+ .flex-container {
+     display: flex;
+     align-items: stretch;
+     margin-top: 70px;
+     margin-bottom: 100px;
+}
+ .flex-container > div {
+     width: 50%;
+     text-align: justify;
+}
+ .first ,.second {
+     flex-grow: 1;
+     background-color: #FFF;
+}
+ .first {
+     font-size: 14px;
+     padding: 80px 30px 80px 100px;
+}
+ .second {
+     font-size: 12px;
+     padding: 80px 100px 80px 30px;
+}
+ .third {
+     width: 100%;
+     font-size: 24px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ .row {
+     display: -ms-flexbox;
+    /* IE10 */
+     display: flex;
+     -ms-flex-wrap: wrap;
+    /* IE10 */
+     flex-wrap: wrap;
+}
+ .intermediate {
+     -ms-flex: 3%;
+     flex: 3%;
+     max-width: 3%;
+}
+ .firstimg, .fourimg {
+     -ms-flex: 66%;
+    /* IE10 */
+     flex: 66%;
+     max-width: 66%;
+     border: 1px solid #FFF;
+     border-bottom: 1px solid #CCCCCC;
+}
+ .twoimg, .thirdimg {
+     -ms-flex: 31%;
+    /* IE10 */
+     flex: 31%;
+     max-width: 31%;
+     border: 1px solid #FFF;
+}
+ .firstimg, .twoimg {
+     margin: 0 0 15px 0;
+     position: relative;
+}
+ .firstimg:before, .twoimg:before, .thirdimg:before, .fourimg:before {
+     content: "";
+     display: block;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(0, 0, 0, 0.2);
+}
+ .thirdimg, .fourimg {
+     margin: 15px 0 0 0;
+     position: relative;
+}
+ .flex-form input {
+     padding: 20px;
+     border: 1px solid #343638;
+}
+ .flex-form {
+     display: flex;
+     flex-direction: row;
+}
+ form input:first-child {
+     width: 80%;
+     background-color: #F3F3F3;
+}
+ form input:last-child {
+     background-color: #343638;
+     color: #FFF;
+}
+ .secnyw {
+     font-size: 14px;
+     padding: 80px 70px 80px 0;
+     background-color: #FFF;
+}
+ .firstnyw {
+     font-size: 24px;
+     padding: 69px 30px 80px 100px;
+     background-color: #FFF;
+}
+ .flex-form input:last-child {
+     padding: 20px 40px 20px 40px;
+}
+ .small-form input:last-child {
+     padding: 20px 10px;
+}
+ footer {
+     background-color: #FFF;
+     margin: 0 100px 0 100px;
+}
+ footer {
+     margin: 0px;
+     padding: 0px;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-flow: row;
+     flex-flow: row;
+}
+ footer > .footer-centr {
+     -webkit-flex: 3 1 80%;
+     flex: 3 1 80%;
+     -webkit-order: 2;
+     order: 2;
+}
+ footer > .footer-left {
+     -webkit-flex: 1 6 10%;
+     flex: 1 6 10%;
+     -webkit-order: 1;
+     order: 1;
+}
+ footer > .footer-right {
+     -webkit-flex: 1 6 10%;
+     flex: 1 6 10%;
+     -webkit-order: 3;
+     order: 3;
+}
+ .foot {
+     display: flex;
+     align-items: stretch;
+     background-color: #FFF;
+     font-size: 14px;
+}
+ .fot-third {
+     width: 24%;
+}
+ .fot-second {
+     width: 20%;
+}
+ .fot-second p {
+     line-height: 2;
+}
+ .fot-third p:first-of-type {
+     font-style: italic;
+}
+ .fot-first {
+     flex-grow: 1;
+     margin: 100px 40px 100px 0;
+     width: 24%;
+     text-align: justify;
+}
+ .fot-fourth {
+     flex-grow: 1;
+     margin: 100px 0 100px 40px ;
+     width: 32% 
+}
+ .fot-second, .fot-third {
+     flex-grow: 1;
+     margin: 100px 40px 100px 40px;
+}
+ .fot-third p:last-child {
+     color: #F3F3F3;
+}
+ .foottt {
+     display: flex;
+     align-items: stretch;
+     position: relative;
+     text-align: center;
+}
+ .foottt > div {
+     width: 50%;
+     text-align: justify;
+}
+ .footone, .foottwo {
+     flex-grow: 1;
+}
+ .footone p, .foot p {
+     color:#9E9E9E;
+}
+ .navigation {
+     list-style: none;
+     margin: 0;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-flow: row wrap;
+     justify-content: flex-end;
+}
+ .navigation a {
+     text-decoration: none;
+     display: block;
+     padding: 1em;
+     color: #343638;
+}
+ .navigation a {
+     text-align: center;
+     padding: 10px;
+}
