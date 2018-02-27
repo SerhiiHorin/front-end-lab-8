@@ -1,0 +1,42 @@
+/* Your styles goes here */
+
+.first1, .first2, .first3, .first4, .first5, .first6, .first7, .first8 {
+  display: flex;
+  flex-direction: row;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.hover.active,
+.hover:hover {
+	background-color: #EFEFEF;
+}
+
+.first3, .first4, .first5 {
+	margin-left: 13px;
+}
+
+.first6, .first7, .first8 {
+  margin-left: 26px;
+}
+.films, .films2, .iron, .fantasy, .fantasy2, .lord, .newFold, .newFold2 {
+  margin: 5px;
+}
+.empty {
+	margin: 5px 5px 5px 31px;
+	font-style: italic;
+	cursor: pointer;
+}
+
+.color { color: #EDBC0B; }
+
+.doc {color: #BBBBBB;}
+
+/*
+.first1.show {
+	display: block;
+}
+
+.first2, .first3, .first4, .first5, .first6, .first7, .first8, .empty {
+	display: none;
+}
+*/
