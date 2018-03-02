@@ -1,0 +1,43 @@
+/* Your styles goes here */
+ body {
+     background-color: #1C1C1E;
+     margin: 0;
+}
+ .headline {
+     color:#A19E87;
+     margin-left: 10px;
+}
+ .firstTankName img {
+     float: left;
+     margin: 0 10px 5px 0;
+     text-align: center;
+}
+ .secondTankName img {
+     float: left;
+     margin: 0 10px 5px 0;
+     text-align: center;
+}
+ .firstTankSignature, .secondTankSignature {
+     position: relative;
+}
+ .firstTankName, .secondTankName {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%) 
+}
+ p.firstTankName, p.secondTankName {
+     font-size: 18px;
+     font-weight: bold;
+     color: #D7D1B7;
+}
+ p.firstTankName span, p.secondTankName span {
+     color:#A19E87;
+}
+ #divTanks {
+     display: -webkit-flex;
+     -webkit-flex-wrap: wrap;
+     display: flex;
+     flex-wrap: wrap;
+}
